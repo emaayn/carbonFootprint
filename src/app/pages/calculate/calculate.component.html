@@ -1,0 +1,116 @@
+<div class="container">
+  <div class="calculate">
+    <div class="progress">
+      <div class="item" *ngFor="let item of progress" [class]="item.status === 0 ? 'disabled' : 'active'">
+        <div class="icon-wrapper">
+          <app-icon icon="{{item.icon}}"></app-icon>
+        </div>
+        <h5>{{item.name}}</h5>
+      </div>
+    </div>
+    <div class="content">
+      <div class="left">
+
+      </div>
+      <div class="right">
+        <form action="#">
+          <div class="custom-input">
+            <label for="question1">1. Ne tür bir evde yaşıyorsunuz?</label>
+            <select name="question1" id="question1">
+              <option value="">Lütfen seçiminizi yapınız...</option>
+              <option value="1">Öğrenci yurdu</option>
+              <option value="2">Müstakil</option>
+              <option value="3">Daire</option>
+            </select>
+          </div>
+          <div class="custom-input">
+            <label for="question2">2. Evde yaşayan kişi sayısı</label>
+            <select name="question2" id="question2">
+              <option value="">Lütfen seçiminizi yapınız...</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="custom-input">
+            <label for="question3">3. Evinizde kullandığınız ısıtma sistemi nedir?</label>
+            <select name="question3" id="question3">
+              <option value="">Lütfen seçiminizi yapınız...</option>
+              <option value="1">Kömür</option>
+              <option value="2">Odun</option>
+              <option value="3">Doğalgaz</option>
+              <option value="4">Elektrik</option>
+            </select>
+          </div>
+
+          <div class="custom-input">
+            <label for="question4">4. Haftada kaç gün duş alıyorsunuz?</label>
+            <select name="question4" id="question4">
+              <option value="">Lütfen seçiminizi yapınız...</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+          <div class="custom-input">
+            <label for="question5">5. Evinizde yalıtım var mı?</label>
+            <select name="question5" id="question5">
+              <option value="">Lütfen seçiminizi yapınız...</option>
+              <option value="1">Evet</option>
+              <option value="2">Hayır</option>
+              <option value="3">Bilmiyorum</option>
+            </select>
+          </div>
+          <div class="custom-input">
+            <label for="question6">6. Televizyon-bilgisayar vb. elektrikli aletleri kullandıktan sonra tamamen kapatır mısınız yoksa bekleme moduna mı alırsınız?</label>
+            <select name="question6" id="question6">
+              <option value="">Lütfen seçiminizi yapınız...</option>
+              <option value="1">Tamamen kapatırım.</option>
+              <option value="2">Bekleme moduna alırım.</option>
+            </select>
+          </div>
+          <div class="custom-input">
+            <label for="question7">7. Elektrikli araç gereç satın alırken verimlilik derecelerini dikkate alıyor musunuz?</label>
+            <select name="question7" id="question7">
+              <option value="">Lütfen seçiminizi yapınız...</option>
+              <option value="1">Evet, dikkat ediyorum.</option>
+              <option value="2">Hayır, dikkat etmiyorum.</option>
+              <option value="3">Bilmiyorum.</option>
+            </select>
+          </div>
+          <div class="custom-input">
+            <label for="question8">8. Odanda kaç adet ampul var?</label>
+            <select name="question8" id="question8">
+              <option value="">Lütfen seçiminizi yapınız...</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3 ve daha fazla</option>
+            </select>
+          </div>
+          <div class="custom-input">
+            <label for="question9">9. Odadan çıkarken ışıkları kapatır mısın??</label>
+            <select name="question9" id="question9">
+              <option value="">Lütfen seçiminizi yapınız...</option>
+              <option value="1">Evet</option>
+              <option value="2">Hayır</option>
+            </select>
+          </div>
+        </form>
+        <div class="form-button">
+          <button type="submit" class="custom-button fill" routerLink="calculate">Devam Et</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="main-banner">
+  <img src="../../../assets/img/sliders/slider-1.jpg" alt="karbon ayakizi">
+
+  <div class="content">
+    <div class="text">
+      <h2>DOĞAYA VERDİĞİNİZ ZARARI</h2>
+      <h2>BİLİYOR MUSUNUZ?</h2>
+      <span class="line"></span>
+      <p>Bireysel karbon ayak izinin bir kısmını da olsa tahmini olarak ölçülebilmesi bazı hesaplama yöntemleri
+        bulunmaktadır. Gelin birlikte karbon ayak izinizi hesaplayalım.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="subtitle">
+    <h2>Dünyamızı kurtarmak bizim elimizde!</h2>
+    <span class="line">
+     <!--
+      <img src="../../../assets/icons/leaf.png" alt="karbon ayakizi">
+      <img src="../../../assets/icons/leaf.png" alt="karbon ayakizi">
+     -->
+    </span>
+    <p>İşte bunu yapmak için bazı dikkat etmemiz gerekenler;</p>
+  </div>
+  <div class="missions">
+    <div class="box" *ngFor="let mission of missions">
+      <img src=".{{mission.img}}" alt="karbon ayakizi">
+      <h4>{{mission.title}}</h4>
+      <p>{{mission.text}}</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="calculate-section">
+  <div class="container">
+    <h2>Karbon Ayakizini Hesapla</h2>
+    <span class="line"></span>
+    <p>Karbon ayak izi, insan faaliyetleri sonucu atmosfere salınan sera gazlarının karbondioksit (CO2) eşdeğerinde
+      çeşitli yöntemlerle hesaplama çalışmasıdır. CO2 emisyonu, yani salınımı olarak adlandıracağımız bu sonuç, dünyaya
+      birçok açıdan zarar verir.
+      Bunların en önemli etkileri küresel ısınma, iklim değişikliği ve doğal hayatın tehlikeye düşmesidir.</p>
+    <p>Bireysel karbon ayak izinin bir kısmını da olsa tahmini olarak ölçülebilmesi bazı hesaplama yöntemleri
+      bulunmaktadır. Bireysel olarak doğaya ve yaşadığımız gezegene verdiğimiz zararı en aza indirgemek için gelin
+      birlikte karbon ayak izinizi hesaplayalım.</p>
+    <button class="custom-button" routerLink="calculate">Hesapla</button>
+  </div>
+</div>
